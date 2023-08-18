@@ -9,42 +9,28 @@ class TV:
         self.canal = 0
 
     def mudarCanal(self,canal):
-        if(canal<0):
-            print("Canal negativo n existe")
-        if(canal > 500):
-            print("Canal invalido")
-        else:
+        if(canal > 0 and canal <= 500):
             self.canal = canal
-    def aumentarVolume(self,volume):
-        if(volume<0):
-            print("Valor invalido")
-        if(volume > 100):
-            print("Maior que o volume max")
-        if((volume + self.vol) > 100):
-            print("Maior que o volume max")
         else:
+            print("Canal invalido")
+
+
+    def ajusteDeVolume(self,volume):
+        if  0 <= volume + self.vol <= 100 :
             self.vol += volume
-
-
-    def diminuirVolume(self,volume):
-        if (volume < 0):
-            print("Valor invalido")
-        if(volume > self.vol):
-            self.vol = 0
-            print("TV no mudo")
         else:
-            self.vol -= volume
+            print("Ajuste de volume invalido")
 
     def retornarValores(self):
         return f"Volume atual: {self.vol}, Canal Atual: {self.canal}"
 
 tv = TV()
 
-tv.aumentarVolume(10)
+tv.ajusteDeVolume(10)
 print(tv.retornarValores())
-tv.diminuirVolume(50)
+tv.ajusteDeVolume(-50)
 print(tv.retornarValores())
-tv.diminuirVolume(10000)
+tv.ajusteDeVolume(-10)
 print(tv.retornarValores())
 tv.mudarCanal(300)
 print(tv.retornarValores())
