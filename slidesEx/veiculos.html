@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module veiculos</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">veiculos</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cbreno%5Conedrive%5C%C3%A1rea%20de%20trabalho%5Cestrutura_de_dados%5Cslidesex%5Cveiculos.py">c:\users\breno\onedrive\área de trabalho\estrutura_de_dados\slidesex\veiculos.py</a></td></tr></table>
+    <p><span class="code">Esta&nbsp;e&nbsp;uma&nbsp;classe&nbsp;generica&nbsp;de&nbsp;veiculo</span></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="veiculos.html#Veiculo">Veiculo</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="veiculos.html#VDuasRodas">VDuasRodas</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="veiculos.html#Bicicleta">Bicicleta</a>
+</dt></dl>
+</dd>
+<dt class="heading-text"><a href="veiculos.html#VMaisDe4Rodas">VMaisDe4Rodas</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="veiculos.html#Caminhao">Caminhao</a>(<a href="veiculos.html#VMaisDe4Rodas">VMaisDe4Rodas</a>, <a href="veiculos.html#VMotorizado">VMotorizado</a>)
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="veiculos.html#Camionete">Camionete</a>
+</dt></dl>
+</dd>
+</dl>
+</dd>
+<dt class="heading-text"><a href="veiculos.html#VMotorizado">VMotorizado</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="veiculos.html#Carro">Carro</a>(<a href="veiculos.html#VMotorizado">VMotorizado</a>, <a href="veiculos.html#VQuatroRodas">VQuatroRodas</a>)
+</dt><dt class="heading-text"><a href="veiculos.html#Moto">Moto</a>(<a href="veiculos.html#VMotorizado">VMotorizado</a>, <a href="veiculos.html#VDuasRodas">VDuasRodas</a>)
+</dt></dl>
+</dd>
+<dt class="heading-text"><a href="veiculos.html#VQuatroRodas">VQuatroRodas</a>
+</dt><dt class="heading-text"><a href="veiculos.html#VSemMotor">VSemMotor</a>
+</dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Bicicleta">class <strong>Bicicleta</strong></a>(<a href="veiculos.html#VDuasRodas">VDuasRodas</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Bicicleta">Bicicleta</a>(tipo)<br>
+&nbsp;<br>
+<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="veiculos.html#Bicicleta">Bicicleta</a></dd>
+<dd><a href="veiculos.html#VDuasRodas">VDuasRodas</a></dd>
+<dd><a href="veiculos.html#Veiculo">Veiculo</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Bicicleta-__init__"><strong>__init__</strong></a>(self, tipo)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="Bicicleta-andar"><strong>andar</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="veiculos.html#Veiculo">Veiculo</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Caminhao">class <strong>Caminhao</strong></a>(<a href="veiculos.html#VMaisDe4Rodas">VMaisDe4Rodas</a>, <a href="veiculos.html#VMotorizado">VMotorizado</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Caminhao">Caminhao</a>(tipo,&nbsp;nRodas,&nbsp;carga)<br>
+&nbsp;<br>
+<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="veiculos.html#Caminhao">Caminhao</a></dd>
+<dd><a href="veiculos.html#VMaisDe4Rodas">VMaisDe4Rodas</a></dd>
+<dd><a href="veiculos.html#VMotorizado">VMotorizado</a></dd>
+<dd><a href="veiculos.html#Veiculo">Veiculo</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Caminhao-__init__"><strong>__init__</strong></a>(self, tipo, nRodas, carga)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="Caminhao-liberarCarga"><strong>liberarCarga</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="veiculos.html#VMotorizado">VMotorizado</a>:<br>
+<dl><dt><a name="Caminhao-acelerar"><strong>acelerar</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="veiculos.html#Veiculo">Veiculo</a>:<br>
+<dl><dt><a name="Caminhao-andar"><strong>andar</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="veiculos.html#Veiculo">Veiculo</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Camionete">class <strong>Camionete</strong></a>(<a href="veiculos.html#Caminhao">Caminhao</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Camionete">Camionete</a>(tipo,&nbsp;nRodas,&nbsp;carga)<br>
+&nbsp;<br>
+<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="veiculos.html#Camionete">Camionete</a></dd>
+<dd><a href="veiculos.html#Caminhao">Caminhao</a></dd>
+<dd><a href="veiculos.html#VMaisDe4Rodas">VMaisDe4Rodas</a></dd>
+<dd><a href="veiculos.html#VMotorizado">VMotorizado</a></dd>
+<dd><a href="veiculos.html#Veiculo">Veiculo</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Camionete-__init__"><strong>__init__</strong></a>(self, tipo, nRodas, carga)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="veiculos.html#Caminhao">Caminhao</a>:<br>
+<dl><dt><a name="Camionete-liberarCarga"><strong>liberarCarga</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="veiculos.html#VMotorizado">VMotorizado</a>:<br>
+<dl><dt><a name="Camionete-acelerar"><strong>acelerar</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="veiculos.html#Veiculo">Veiculo</a>:<br>
+<dl><dt><a name="Camionete-andar"><strong>andar</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="veiculos.html#Veiculo">Veiculo</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Carro">class <strong>Carro</strong></a>(<a href="veiculos.html#VMotorizado">VMotorizado</a>, <a href="veiculos.html#VQuatroRodas">VQuatroRodas</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Carro">Carro</a>(tipo)<br>
+&nbsp;<br>
+<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="veiculos.html#Carro">Carro</a></dd>
+<dd><a href="veiculos.html#VMotorizado">VMotorizado</a></dd>
+<dd><a href="veiculos.html#VQuatroRodas">VQuatroRodas</a></dd>
+<dd><a href="veiculos.html#Veiculo">Veiculo</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Carro-__init__"><strong>__init__</strong></a>(self, tipo)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="veiculos.html#VMotorizado">VMotorizado</a>:<br>
+<dl><dt><a name="Carro-acelerar"><strong>acelerar</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="veiculos.html#Veiculo">Veiculo</a>:<br>
+<dl><dt><a name="Carro-andar"><strong>andar</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="veiculos.html#Veiculo">Veiculo</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Moto">class <strong>Moto</strong></a>(<a href="veiculos.html#VMotorizado">VMotorizado</a>, <a href="veiculos.html#VDuasRodas">VDuasRodas</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Moto">Moto</a>(tipo)<br>
+&nbsp;<br>
+<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="veiculos.html#Moto">Moto</a></dd>
+<dd><a href="veiculos.html#VMotorizado">VMotorizado</a></dd>
+<dd><a href="veiculos.html#VDuasRodas">VDuasRodas</a></dd>
+<dd><a href="veiculos.html#Veiculo">Veiculo</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Moto-__init__"><strong>__init__</strong></a>(self, tipo)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="veiculos.html#VMotorizado">VMotorizado</a>:<br>
+<dl><dt><a name="Moto-acelerar"><strong>acelerar</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="veiculos.html#Veiculo">Veiculo</a>:<br>
+<dl><dt><a name="Moto-andar"><strong>andar</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="veiculos.html#Veiculo">Veiculo</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="VDuasRodas">class <strong>VDuasRodas</strong></a>(<a href="veiculos.html#Veiculo">Veiculo</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#VDuasRodas">VDuasRodas</a>(tipo)<br>
+&nbsp;<br>
+<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="veiculos.html#VDuasRodas">VDuasRodas</a></dd>
+<dd><a href="veiculos.html#Veiculo">Veiculo</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="VDuasRodas-__init__"><strong>__init__</strong></a>(self, tipo)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="veiculos.html#Veiculo">Veiculo</a>:<br>
+<dl><dt><a name="VDuasRodas-andar"><strong>andar</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="veiculos.html#Veiculo">Veiculo</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="VMaisDe4Rodas">class <strong>VMaisDe4Rodas</strong></a>(<a href="veiculos.html#Veiculo">Veiculo</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#VMaisDe4Rodas">VMaisDe4Rodas</a>(tipo,&nbsp;nRodas)<br>
+&nbsp;<br>
+<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="veiculos.html#VMaisDe4Rodas">VMaisDe4Rodas</a></dd>
+<dd><a href="veiculos.html#Veiculo">Veiculo</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="VMaisDe4Rodas-__init__"><strong>__init__</strong></a>(self, tipo, nRodas)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="veiculos.html#Veiculo">Veiculo</a>:<br>
+<dl><dt><a name="VMaisDe4Rodas-andar"><strong>andar</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="veiculos.html#Veiculo">Veiculo</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="VMotorizado">class <strong>VMotorizado</strong></a>(<a href="veiculos.html#Veiculo">Veiculo</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#VMotorizado">VMotorizado</a>(tipo)<br>
+&nbsp;<br>
+<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="veiculos.html#VMotorizado">VMotorizado</a></dd>
+<dd><a href="veiculos.html#Veiculo">Veiculo</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="VMotorizado-__init__"><strong>__init__</strong></a>(self, tipo)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="VMotorizado-acelerar"><strong>acelerar</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="veiculos.html#Veiculo">Veiculo</a>:<br>
+<dl><dt><a name="VMotorizado-andar"><strong>andar</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="veiculos.html#Veiculo">Veiculo</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="VQuatroRodas">class <strong>VQuatroRodas</strong></a>(<a href="veiculos.html#Veiculo">Veiculo</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#VQuatroRodas">VQuatroRodas</a>(tipo)<br>
+&nbsp;<br>
+<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="veiculos.html#VQuatroRodas">VQuatroRodas</a></dd>
+<dd><a href="veiculos.html#Veiculo">Veiculo</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="VQuatroRodas-__init__"><strong>__init__</strong></a>(self, tipo)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="veiculos.html#Veiculo">Veiculo</a>:<br>
+<dl><dt><a name="VQuatroRodas-andar"><strong>andar</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="veiculos.html#Veiculo">Veiculo</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="VSemMotor">class <strong>VSemMotor</strong></a>(<a href="veiculos.html#Veiculo">Veiculo</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#VSemMotor">VSemMotor</a>(tipo)<br>
+&nbsp;<br>
+<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="veiculos.html#VSemMotor">VSemMotor</a></dd>
+<dd><a href="veiculos.html#Veiculo">Veiculo</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="VSemMotor-__init__"><strong>__init__</strong></a>(self, tipo)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="veiculos.html#Veiculo">Veiculo</a>:<br>
+<dl><dt><a name="VSemMotor-andar"><strong>andar</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="veiculos.html#Veiculo">Veiculo</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Veiculo">class <strong>Veiculo</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Veiculo">Veiculo</a>(tipo)<br>
+&nbsp;<br>
+<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Veiculo-__init__"><strong>__init__</strong></a>(self, tipo)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="Veiculo-andar"><strong>andar</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
