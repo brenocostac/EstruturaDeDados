@@ -12,10 +12,7 @@ class Macaco:
         self.bucho = bucho
 
     def comer(self,comida):
-        if comida == "macaco":
-            print("Macaco não pode comer macaco")
-        else:
-            self.bucho.append(comida)
+        self.bucho.append(comida)
 
     def digerir(self,comida):
         for comidas in self.bucho:
@@ -35,3 +32,11 @@ macaco.comer("macaco")
 macaco.verBucho()
 macaco.digerir("melao")
 macaco.verBucho()
+macaco2 = Macaco('Xiita')
+print(macaco2.ver_bucho())
+macaco2.comer(macaco)
+print(macaco2.ver_bucho())
+macaco2.digerir(macaco)
+print(macaco2.ver_bucho())
+macaco2.comer("Melancia")
+print(macaco2.ver_bucho())

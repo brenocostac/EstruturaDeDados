@@ -9,13 +9,13 @@ class Retangulo:
         self.comprimento = comprimento
         self.largura = largura
 
-    def mudarValorDoComprimento(self,comprimento):
+    def setComprimento(self,comprimento):
         self.comprimento = comprimento
 
-    def mudarValorDaLargura(self,largura):
+    def setLargura(self,largura):
         self.largura = largura
 
-    def retornarLados(self):
+    def getLados(self):
         return f"{self.largura}  {self.comprimento}"
 
     def calcularArea(self):
@@ -27,6 +27,6 @@ class Retangulo:
 
 retangulo = Retangulo(5,10)
 
-print(retangulo.retornarLados())
+print(retangulo.getLados())
 print(retangulo.perimetro())
 print(retangulo.calcularArea())

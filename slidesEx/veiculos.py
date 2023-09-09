@@ -90,6 +90,9 @@ class Caminhao(VMaisDe4Rodas, VMotorizado):
         super().__init__(tipo, nRodas)
         self.carga = carga
 
+
+    def __str__(self):
+        return f"Tipo: {self.tipo}, Rodas: {self.nRodas}, Carga: {self.carga}"
     """
     Metodo para liberar a carga de um caminhao
     """
@@ -111,6 +114,12 @@ class Carro(VMotorizado, VQuatroRodas):
 class Camionete(Caminhao):
     def __init__(self, tipo, nRodas, carga):
         super().__init__(tipo, nRodas, carga)
+        
+    def __str__(self):
+        camionete_info = super().__str__()
+        return f"Camionete: {camionete_info}"
 
 
+minha_camionete = Camionete("Camionete Tipo A", 4, 1000)
 
+print(minha_camionete)

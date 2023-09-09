@@ -7,7 +7,7 @@
 # ou seja, um campo calculado, então não devemos criar um atributo para armazenar esta informação
 # por que ela pode ser calculada a qualquer momento.
 
-class Tamagotchi:
+class Bichinho:
     def __init__(self,nome,fome,saude,idade):
         self.nome = nome
         self.fome = fome
@@ -42,5 +42,5 @@ class Tamagotchi:
         return (self.fome + self.saude)/2
 
 
-tamagotchi = Tamagotchi("Gengar",80,70,6)
-print(tamagotchi.retornarHumor())
+bichinho = Bichinho("Gengar", 80, 70, 6)
+print(bichinho.retornarHumor())

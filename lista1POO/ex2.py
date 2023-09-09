@@ -8,7 +8,7 @@ class Quadrado:
     def __init__(self,lado):
         self.lado = lado
 
-    def mudarValorDoLado(self,lado):
+    def setLado(self,lado):
         self.lado = lado
 
     def getLado(self):
@@ -25,6 +25,6 @@ print(quadrado.calcularArea())
 
 print(quadrado.getLado())
 
-quadrado.mudarValorDoLado(10)
+quadrado.setLado(10)
 
 print(quadrado.getLado())

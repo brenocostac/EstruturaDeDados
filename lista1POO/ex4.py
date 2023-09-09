@@ -14,11 +14,16 @@ class Pessoa:
 
     def retornarValores(self):
         return f"Idade: {self.idade}, Nome: {self.nome}, peso: {self.peso}, altura: {self.altura}"
-    def envelhecer(self,idade):
-        if(idade > self.idade):
-            self.idade = idade
-        else:
-            print("Sua idade ja é maior")
+
+    def envelhecer(self, novaIdade):
+        if novaIdade > self.idade:
+            if self.idade < 21:
+                for i in range(self.idade, novaIdade):
+                    if i == 21:
+                        break
+                    self.altura += 0.05
+                self.crescer(self.altura)
+            self.idade = novaIdade
 
     def engordar(self, peso):
          self.peso += peso

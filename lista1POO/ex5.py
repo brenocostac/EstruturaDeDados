@@ -9,7 +9,7 @@ class ContaCorrente:
         self.nomeDoCorrentista = nomeDoCorrentista
         self.saldo = saldo
 
-    def alterarNome(self,nome):
+    def setNome(self,nome):
         self.nomeDoCorrentista = nome
 
     def deposito(self, valorDeposito):
@@ -18,7 +18,7 @@ class ContaCorrente:
     def saque(self, valorSaque):
         self.saldo -= valorSaque
 
-    def retornarValor(self):
+    def getConta(self):
         return f"Saldo atual: {self.saldo}, Nome:{self.nomeDoCorrentista}"
 
 
@@ -28,5 +28,5 @@ print(conta.retornarValor())
 
 conta.deposito(10000)
 conta.saque(500)
-print(conta.retornarValor())
+print(conta.getConta())
 
